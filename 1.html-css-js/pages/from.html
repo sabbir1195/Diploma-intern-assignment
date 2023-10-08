@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+
+<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="../assets/js/lib/confirm/jquery-confirm.min.css">
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/lib/jquery-3.7.1.min.js"></script>
+<script src="../assets/js/lib/confirm/jquery-confirm.min.js"></script>
+<script src="../assets/js/lib/pweb.message.box.js"></script>
+
+</head>
+<body>
+    <script>
+        jQuery(document).ready(function () {
+
+            jQuery(".log-in").confirm({
+                title: 'Confirmation!',
+                content: 'Are you sure want to log-In?'
+            })
+
+        });
+    </script>
+    <!-- <script>
+        jQuery(document).ready(function () {
+
+            jQuery(".success").click(function () {
+                PWeb.messageBox.showMessage(true, "your registration Success")
+            })
+
+        jQuery(".btn-info success").click(function () {
+            PWeb.messageBox.showMessage(false, "This is Error")
+        })
+
+    }); -->
+</script>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+            <form class="needs-validation" noValidate>
+                <div>
+                    <p class="fw-bold text-center bangla-text fs-1"> REGISTRATION </p>
+                </div>
+        
+                <div class="row">
+                    <div class="col-md-4">
+                        <label class="form-label">
+                            <span class="text-danger">*</span>
+                            Name
+                        </label>
+                        <input type="text" class="form-control" required>
+                        <div class="invalid-feedback">Please enter your Name</div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">
+                            <span class="text-danger">*</span>
+                            Mobile
+                        </label>
+                        <input type="number" class="form-control">
+                        <div class="invalid-feedback">Please enter your mobile number</div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">
+                            <span class="text-danger">*</span>
+                            Password
+                        </label>
+                        <input type="password" class="form-control" required>
+                        <div class="invalid-feedback">Please enter a password</div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">
+                            <span class="text-danger">*</span>
+                            Email
+                        </label>
+                        <input type="email" class="form-control">
+                        <div class="invalid-feedback">Please enter email address</div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">Emargency Contract</label>
+                            <input type="number" name="emergency contract" class="form-control" >
+                            <div class="invalid-feedback">Please enter emergency contract</div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label"><span class="text-danger">*</span>
+                            Home District
+                        </label>
+                        <select name="District" class="form-select" required>
+                            <option value="District">District</option>
+                            <option value="Rangpur">Rangpur</option>
+                            <option value="rajshahi">Rajshahi</option>
+                            <option value="kurigram">Kurigram</option>
+                            <option value="kushtia">Kushtia</option>
+                        </select>
+
+                    </div>
+                    <div class="col-md-6">
+                        <label class=" form-label"> Study In (Diploma Engineering)</label>
+                            <input type="text" required class="form-control">
+                        </div>
+                        <div class=" col-md-6">
+                            <label class="form-label">Institute Name</label>
+                            <input type="text" name="Institute" class="form-control" >
+
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">Technology</label>
+                                <select name="technology" class="form-select">
+                                    <option value="Technology">Technology</option>
+                                    <option value="computer">Computer</option>
+                                    <option value="civil">Civil</option>
+                                    <option value="eee">EEE</option>
+                                    <option value="mechanical">Mechanical</option>
+                                </select>
+
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">Semester(8th)</label>
+                        <select name="Semester" class="form-select">
+                            <option value="Semester">Semester</option>
+                            <option value="1st">1st</option>
+                            <option value="2nd">2nd</option>
+                            <option value="3rd">3rd</option>
+                            <option value="4th">4th</option>
+                            <option value="5th">5th</option>
+                            <option value="6th">6th</option>
+                            <option value="7th">7th</option>
+                            <option value="8th">8th</option>
+                        </select>
+
+                            
+
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">Shift</label>
+                            <select name="shift" class="form-select">
+                                <option value="first shift">First Shift</option>
+                                <option value="second shift">Second Shift</option>
+                            </select>
+
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Present Address</label>
+                            <textarea name="Present Address"  class="form-control"></textarea>
+
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Permanent Address</label>
+                            <textarea name="Permanent"  class="form-control"></textarea>
+                        
+
+                    </div>
+                   
+                    <div class="col-md-12">
+                        <label class="form-label">Comment</label>
+                        <textarea name="comment" class="form-control"></textarea>
+
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-info success">Registration</button>
+                        <button type="button" class="btn btn-secondary log-in">Log in</button>
+                    </div>
+                </div>
+                
+            </form>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/bootstrap-form-validators.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+            let forms = document.querySelectorAll('.needs-validation')
+            let form = forms[0]
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                } else {
+                    PWeb.messageBox.showMessage(true, "Registration Success")
+                    form.reset()
+                    event.preventDefault()
+                    event.stopPropagation()
+                    return false
+                }
+                form.classList.add('was-validated')
+            }, false)
+        });
+    </script>
+
+</body>
+</html>
